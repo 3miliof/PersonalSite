@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&family=Lexend+Deca&family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+
+    <title>Emilio Frigo</title>
+</head>
+
+<body>
+
+    <div class="wholePage">
+        <div id="topMenu" class="Menu">
+            
+            <img id="returnTopIcon" class="notShown" src="images/up-arrow.svg" onclick="changeIt()"></img>
+            <p id="m1" class="menuItem"><a href="javascript: scrollIntoView('topAboutMe');">ABOUT ME</a></p>
+            <p id="m2" class="menuItem"><a href="javascript: scrollIntoView('topProjects');">PROJECTS</a></p>
+            <p id="m3" class="menuItem"><a href="javascript: scrollIntoView('topSkills');">ACCOMPLISHMENTS</a></p>
+            <p id="m4" class="menuItem"><a href="javascript: scrollIntoView('topContactMe');">CONTACT ME</a></p>
+        </div>
+
+        <section class="welcomeScreen child">
+            <a id="topHome"></a>
+            <div class="bgImg"></div>
+            <p class="Title welcomeScreenTitle">EMILIO FRIGO</p>
+            <p class="Subtitle">Bsc (Hons) Software Engineering Student - 2nd Year</p>
+            <div class="MediaIcons">
+                <img id="githubIcon" class="icon" src="images/githubWhite.png" onmouseenter="changeGithubOn();" onmouseleave="changeGithubOff();" onclick="redirectTo('github.com/3miliof')"></img>
+                <img id="linkedInIcon" class="icon" src="images/linkedInWhite.png" onmouseenter="changeLinkedInOn();" onmouseleave="changeLinkedInOff();" onclick="redirectTo('www.linkedin.com/in/emiliofrigo/')"></img>
+            </div>
+        </section>
+
+        <section class="AboutMe child">
+            <a id="topAboutMe"></a>
+
+            <div class="aboutMeInside">
+
+                <div class="aboutMeImg">
+                    
+                </div>
+                <div class="aboutMeTextOuter">
+
+                    <div class="aboutMeTitle">
+                        ABOUT ME
+                    </div>
+                    <div class="aboutMeText">
+                        <p id="ap1">My name is Emilio Frigo and I am a second year student, currently studying Software Engineering at Bournemouth University. My interests all have one similarity: They revolve around the use of a computer. Whether it be playing video games, designing websites or trying to find the solution to different programming problems, the majority of my time has always been spent infront of a screen. This means I am constantly looking for new ways to expand my knowledge and challenge myself to complete problems with ever increasing difficulty. </p>
+
+                        <p id="ap2">Throughout my first year of university, I achieved consistently above a First Class classification, and finished the year with an overall average of 81.36%. Unfortunately, due to the online learning conditions I wasn't able to get involved with workshops and different learning opportunities as I had planned, and therefore looked elsewhere to expand my knowledge beyond what was taught. This is where I found Leetcode and FrontendMentor to be incredibly helpful in allowing me to attempt more complex tasks and learn independently.</p>
+
+                        <p id="ap3">I have a particularly strong interest in the field of software engineering, leaning towards web-based applications. Therefore for my second year I have chosen the modules: Web Programming and Machine Learning. As this is also a topic of great interest to me.</p>
+
+                        <p id="ap4">Do not hesitate to contact me on LinkedIn or by email at emiliofrigo123@gmail.com, if you have any further questions.</p>
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="Projects child">
+            <a id="topProjects"></a>
+            
+            <div class="projectsWrapper">
+
+                <div class="projectsTitleFlex">
+                    <div id="IDprojectsTitle" class="projectsTitle">MY PROJECTS</div>
+                    <div id="IDprojectsExplain" class="projectsExplain">These are just some of the projects I have worked on recently, mostly challenges from FrontendMentor to practice my frontend web capabilities. For my attempts at more algorithmic problems and programming, please look to my leetcode profile.</div>
+                </div>
+                <div class="projectsLine pl1">
+                    <div id="p1" class="project">
+                        <div class="projectShadow" onclick="redirectTo('3miliof.github.io/FM-Challenge-2/')">
+                            <div class="projectTitle">
+                                <p class="projTitle">PROMOTION BOX</p>
+                            </div>
+                            <div class="projectDescription">
+                                <p class="projDescription">This task was a challenge on FrontendMentor.io to create a responsive box to promote a service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="p2" class="project">
+                        <div class="projectShadow" onclick="redirectTo('3miliof.github.io/FM-Challenge-3/')">
+                            <div class="projectTitle">
+                                <p class="projTitle">SOCIAL MEDIA BOX</p>
+                            </div>
+                            <div class="projectDescription">
+                                <p class="projDescription">This task was a challenge on FrontendMentor.io to create a responsive social media style box.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="p3" class="project">
+                        <div class="projectShadow" onclick="redirectTo('3miliof.github.io/FM-Challenge-4/')">
+                            <div class="projectTitle">
+                                <p class="projTitle">FAQ MENU</p>
+                            </div>
+                            <div class="projectDescription">
+                                <p class="projDescription">This task was a challenge on FrontendMentor.io to create a responsive FAQ section with an accordian menu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectsLine pl2">
+                    <div id="p4" class="project">
+                        <div class="projectShadow" onclick="redirectTo('3miliof.github.io/Tip-Calculator/')">
+                            <div class="projectTitle">
+                                <p class="projTitle">TIP CALCULATOR</p>
+                            </div>
+                            <div class="projectDescription">
+                                <p class="projDescription">This task was a challenge on FrontendMentor.io to create a responsive tip calculator.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="p5" class="project"></div>
+                    <div id="p6" class="project"></div>
+                </div>
+
+            </div>
+            
+
+        </section>
+
+        <section class="Skills child">
+            <a id="topSkills"></a>
+            
+            <div class="skillsWrapper">
+
+                <div class="skillsTopRow">
+
+                    <div id="s1" class="skillsBoxTop">
+                        <p class="boxHeaderText">11</p>
+                        <p class="boxExplainText">GCSEs</p>
+                    </div>
+                    <div id="s2" class="skillsBoxTop">
+                        <p class="boxHeaderText">BSc</p>
+                        <p id="softEngText" class="boxExplainText">Software Engineering</p>
+                    </div>
+                    <div id="s3" class="skillsBoxTop">
+                        <p class="boxHeaderText">3</p>
+                        <p class="boxExplainText">A-Levels</p>
+                    </div>
+                    
+                </div>
+
+                <div class="skillsBottomRow">
+                    <div id="s4" class="skillsBoxBottom">
+                        <p class="boxHeaderText">5</p>
+                        <p id="programLangs" class="boxExplainText">Programming Languages</p>
+                    </div>
+                    <div id="s5" class="skillsBoxBottom">
+                        <p class="boxHeaderText">Github</p>
+                        <p class="boxExplainText">Familiarity with github to manage and maintain projects</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="ContactMe child">
+            <a id="topContactMe"></a>
+            
+            <div class="contactWrapper">
+
+                <div id="contactIcons" class="contactIcons">
+                    <div class="contactIcon contactLinkedIn" onclick="redirectTo('www.linkedin.com/in/emiliofrigo/')"></div>
+                    
+                    <div class="contactIcon contactGithub" onclick="redirectTo('github.com/3miliof')"></div>
+                    
+                    <div class="contactIcon contactGmail" onclick="window.location.href='mailto:emiliofrigo123@gmail.com'"></div>
+                    
+                    <div class="contactIcon contactLeetcode" onclick="redirectTo('leetcode.com/3miliof/')"></div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <div class="ErrorPage">
+        <div class="ErrorTitle">OH NO!</div>
+        <div class="ErrorText">Unfortunately, I haven't developed the mobile design for the site yet. Please re-visit on a desktop, or laptop! Or try increasing the size of the window!</div>
+    </div>
+    <script>
+
+        function changeIt() {
+            document.getElementById("topHome").scrollIntoView({behavior: 'smooth'});
+        }
+
+        function scrollIntoView(elemId) {
+            document.getElementById(elemId).scrollIntoView({behavior: 'smooth'});
+        }
+
+        function changeGithubOn() {
+            document.getElementById("githubIcon").setAttribute("src", "images/githubBlack.png")
+        }
+
+        function changeGithubOff() {
+            document.getElementById("githubIcon").setAttribute("src", "images/githubWhite.png")
+        }
+
+        function changeLinkedInOn() {
+            document.getElementById("linkedInIcon").setAttribute("src", "images/linkedInBlue.png")
+        }
+
+        function changeLinkedInOff() {
+            document.getElementById("linkedInIcon").setAttribute("src", "images/linkedInWhite.png")
+        }
+        
+        function redirectTo(url) {
+            window.open("https://" + url)
+        }
+
+        const startPageObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTopMenuColor("Dark");
+                    setUnderLinedMenuItem("None");
+                }
+            })
+        })
+
+        const aboutMeObserver = new IntersectionObserver(entries => { //AboutMe Observer
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('aboutMeInside-animation');
+                    applyAboutMeClasses();
+                    setTopMenuColor("Light");
+                    setUnderLinedMenuItem("AboutMe");
+                }
+            });
+        });
+
+        function applyAboutMeClasses() {
+            document.getElementById("ap1").classList.add('ap1-animation')
+            document.getElementById("ap2").classList.add('ap2-animation')
+            document.getElementById("ap3").classList.add('ap3-animation')
+            document.getElementById("ap4").classList.add('ap4-animation')
+        }
+
+        const projectsObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    applyProjectsClasses();
+                    setTopMenuColor("Light");
+                    setUnderLinedMenuItem("Projects");
+                }
+            })
+        })
+
+        function applyProjectsClasses() {
+            document.getElementById("p1").classList.add('projectLineFadeInLeft')
+            document.getElementById("p2").classList.add('projectLineFadeInLeft')
+            document.getElementById("p3").classList.add('projectLineFadeInLeft')
+            document.getElementById("p4").classList.add('projectLineFadeInRight')
+            document.getElementById("p5").classList.add('projectLineFadeInRight')
+            document.getElementById("p6").classList.add('projectLineFadeInRight')
+            document.getElementById("IDprojectsTitle").classList.add('projectTitleFade')
+            document.getElementById("IDprojectsExplain").classList.add('projectExplainFade')
+        }
+        
+        const skillsObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    applySkillsClasses();
+                    setTopMenuColor("Light");
+                    setUnderLinedMenuItem("Skills");
+                }
+            })
+        })
+
+        function applySkillsClasses() {
+            document.getElementById("s1").classList.add("s1");
+            document.getElementById("s2").classList.add("s2");
+            document.getElementById("s3").classList.add("s3");
+            document.getElementById("s4").classList.add("s4");
+            document.getElementById("s5").classList.add("s5");
+        }
+
+        function setTopMenuColor(colour) {
+            if (colour == "Dark") {
+                document.getElementById("topMenu").classList.add("topMenuDark")
+                document.getElementById("topMenu").classList.remove("topMenuLight")
+            } else if (colour == "Light") {
+                document.getElementById("topMenu").classList.add("topMenuLight")
+                document.getElementById("topMenu").classList.remove("topMenuDark")
+            }
+        }
+
+        function setUnderLinedMenuItem(menuItemUnderline) {
+            Array.from(document.getElementsByClassName("menuItem")).forEach(menuItemElem => {
+                menuItemElem.classList.remove("Underlined");
+            })
+
+            if (menuItemUnderline == "AboutMe") {
+
+                document.getElementById("m1").classList.add("Underlined");
+                document.getElementById("returnTopIcon").classList.add("Shown");
+                document.getElementById("returnTopIcon").classList.remove("notShown");
+
+            } else if (menuItemUnderline == "Projects") {
+
+                document.getElementById("m2").classList.add("Underlined");
+                document.getElementById("returnTopIcon").classList.add("Shown");
+                document.getElementById("returnTopIcon").classList.remove("notShown");
+
+            } else if (menuItemUnderline == "Skills") {
+
+                document.getElementById("m3").classList.add("Underlined");
+                document.getElementById("returnTopIcon").classList.add("Shown");
+                document.getElementById("returnTopIcon").classList.remove("notShown");
+
+            } else if (menuItemUnderline == "ContactMe") {
+
+                document.getElementById("m4").classList.add("Underlined");
+                document.getElementById("returnTopIcon").classList.add("Shown");
+                document.getElementById("returnTopIcon").classList.remove("notShown");
+            } else if (menuItemUnderline == "None") {
+                document.getElementById("returnTopIcon").classList.add("notShown");
+                document.getElementById("returnTopIcon").classList.remove("Shown");
+            }
+
+        }
+
+        const contactObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    document.getElementById("contactIcons").classList.add("contactAnimation");
+                    setTopMenuColor("Light");
+                    setUnderLinedMenuItem("ContactMe");
+                }
+            })
+        })
+
+        startPageObserver.observe(document.querySelector('.welcomeScreenTitle'));
+        aboutMeObserver.observe(document.querySelector('.aboutMeInside'));
+        projectsObserver.observe(document.querySelector('.projectsWrapper'));
+        skillsObserver.observe(document.querySelector('.skillsWrapper'));
+        contactObserver.observe(document.querySelector('.contactWrapper'));
+
+    </script>
+</body>
+</html>
